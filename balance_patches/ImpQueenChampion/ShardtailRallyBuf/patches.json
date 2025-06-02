@@ -1,0 +1,177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "UUBP_ImpQueenChampionAbility2",
+      "card_art_reference": "",
+      "names": {
+        "english": "Tyranny II"
+      },
+      "descriptions": {
+        "english": "Gain [rage] [effect1.status0.power]. Gain [trample] until the end of combat."
+      },
+      "ability": true,
+      "cooldown": 1,
+      "effects": [
+        {
+          "id": "@UUBP_SacrificeImp"
+        },
+        {
+          "id": "@UUBP_SelfRage8"
+        },
+        {
+          "id": "@UUBP_SelfTempTrample"
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UUBP_ShardtailRallyBuff",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Royalty"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 10,
+      "bonus_hp": 10,
+      "bonus_size": 1,
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_ShardtailRallyBuff"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": "UUBP_ShardtailRallyBuff2",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Royalty II"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 15,
+      "bonus_hp": 15,
+      "bonus_size": 1,
+      "ability_upgrade": "@UUBP_ImpQueenChampionAbility2",
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_ShardtailRallyBuff"
+        },
+        {
+          "id": "@UUBP_ShardtailRallyBuffRemove"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 40
+        }
+      ]
+    },
+    {
+      "id": "UUBP_ShardtailRallyBuff3",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Royalty III"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 30,
+      "bonus_hp": 30,
+      "bonus_size": 1,
+      "ability_upgrade": "@UUBP_ImpQueenChampionAbility3",
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_ShardtailRallyBuff"
+        },
+        {
+          "id": "@UUBP_ShardtailRallyBuffRemove"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 60
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "UUBP_ShardtailRallyBuff",
+      "trigger": "card_monster_played",
+      "descriptions": {
+        "english": "Reduce [cooldown] by [effect0.status0.power]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_SelfCooldownDown1"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_ShardtailRallyBuffRemove",
+      "trigger": "post_combat",
+      "hide_tooltip": true,
+      "allow_tooltips_when_hidden": false,
+      "descriptions": {
+        "english": ""
+      },
+      "effects": [
+        {
+          "id": "@UUBP_SelfTempTrampleLess"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_SelfCooldownDown1",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "cooldown",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SelfRage8",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SelfTempTrample",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@UUBP_TempTrample"
+    },
+    {
+      "id": "UUBP_SelfTempTrampleLess",
+      "name": "CardEffectRemoveTempUpgradeFromUnit",
+      "target_mode": "self",
+      "param_upgrade": "@UUBP_TempTrample"
+    }
+  ]
+}

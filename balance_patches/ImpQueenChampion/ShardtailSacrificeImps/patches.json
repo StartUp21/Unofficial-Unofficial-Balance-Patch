@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "upgrades": [
+    {
+      "id": "UUBP_ShardtailSacrificeImps",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Imperialist"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 0,
+      "bonus_hp": 10,
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_ShardtailSacrificeImps"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_ShardtailSacrificeImps2",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Imperialist II"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 10,
+      "bonus_hp": 20,
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_ShardtailSacrificeImps2"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_ShardtailSacrificeImps3",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Imperialist III"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 30,
+      "bonus_hp": 40,
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_ShardtailSacrificeImps3"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "UUBP_ShardtailSacrificeImps",
+      "trigger": "on_own_ability_activated",
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_EnemiesDamage15"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_ShardtailSacrificeImps2",
+      "trigger": "on_own_ability_activated",
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_EnemiesDamage30"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_ShardtailSacrificeImps3",
+      "trigger": "on_own_ability_activated",
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_EnemiesDamage60"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_EnemiesDamage15",
+      "name": "CardEffectDamage",
+      "param_int": 15,
+      "target_team": "heroes",
+      "target_mode": "targetless"
+    },
+    {
+      "id": "UUBP_EnemiesDamage30",
+      "name": "CardEffectDamage",
+      "param_int": 30,
+      "target_team": "heroes",
+      "target_mode": "targetless"
+    },
+    {
+      "id": "UUBP_EnemiesDamage60",
+      "name": "CardEffectDamage",
+      "param_int": 60,
+      "target_team": "heroes",
+      "target_mode": "targetless"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "UUBP_ImpQueenChampionAbility",
+      "card_art_reference": "",
+      "names": {
+        "english": "Tyranny"
+      },
+      "descriptions": {
+        "english": "Gain [rage] [effect1.status0.power]."
+      },
+      "ability": true,
+      "cooldown": 1,
+      "effects": [
+        {
+          "id": "@UUBP_SacrificeImp"
+        },
+        {
+          "id": "@UUBP_SelfRage5"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "UUBP_ImpQueenChampion",
+      "attack_damage": 5,
+      "ability": "@UUBP_ImpQueenChampionAbility"
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_SacrificeImp",
+      "name": "CardEffectSacrifice",
+      "target_team": "monsters",
+      "target_mode": "drop_target_character",
+      "target_subtype": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
+      "param_subtype": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
+      "param_multiplier": 0
+    },
+    {
+      "id": "UUBP_SelfRage5",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}
