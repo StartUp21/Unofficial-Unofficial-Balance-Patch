@@ -15,7 +15,9 @@
     {
       "id": "UUBP_Damage5",
       "name": "CardEffectDamage",
-      "param_int": 5
+      "param_int": 5,
+      "target_team": "both",
+      "target_mode": "drop_target_character"
     }
   ]
 }
