@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "AntumbraAssault",
+      "effects": [
+        {
+          "id": "@UUBP_Damage5"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_Damage5",
+      "name": "CardEffectDamage",
+      "param_int": 5
+    }
+  ]
+}

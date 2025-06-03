@@ -49,7 +49,6 @@ namespace Unofficial_Unofficial_Balance_Patch
 						for (int i = 0; i < list.Count; i++) {
 							CardUpgradeData? upgrade = list[i];
 							if (upgrade == null) continue;
-							UnityEngine.Debug.Log(upgrade.name);
 							if (c.GetInstance<IRegister<CardUpgradeData>>().TryGetValue($"UUBP_{upgrade.name}".ToKey("Upgrade"), out var data))
 							{
 								list[i] = data;

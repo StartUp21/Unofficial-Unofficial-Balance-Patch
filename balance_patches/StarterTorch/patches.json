@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "StarterTorch",
+      "triggers": [
+        {
+          "id": "@UUBP_StarterTorch"
+        }
+      ]
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "UUBP_StarterTorch",
+      "descriptions": {
+        "english": "Gain [effect0.power][ember]."
+      },
+      "trigger": "on_kill",
+      "effects": [
+        {
+          "id": "@UUBP_Ember1"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_Ember1",
+      "name": "CardEffectGainEnergy",
+      "param_int": 1
+    }
+  ]
+}

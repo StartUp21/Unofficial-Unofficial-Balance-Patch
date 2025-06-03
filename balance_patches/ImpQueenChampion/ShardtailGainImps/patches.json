@@ -1,5 +1,101 @@
 {
 	"$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+	"card_pools": [
+		{
+			"id": "ImpPool",
+			"cards": [
+				"StarterImp",
+				"StarterImp",
+				"StarterImp",
+
+				"WelderHelper",
+				"WelderHelper",
+				"WelderHelper",
+				"WelderHelper",
+				"WelderHelper",
+				"WelderHelper",
+
+				"AggressiveImp",
+				"AggressiveImp",
+				"AggressiveImp",
+				"AggressiveImp",
+				"AggressiveImp",
+				"AggressiveImp",
+
+				"UnstableInfery",
+				"UnstableInfery",
+				"UnstableInfery",
+				"UnstableInfery",
+				"UnstableInfery",
+				"UnstableInfery",
+
+				"EmberedInfery",
+				"EmberedInfery",
+				"EmberedInfery",
+				"EmberedInfery",
+				"EmberedInfery",
+				"EmberedInfery",
+
+				"EnlightenedInfery",
+
+				"TranscendImp"
+			]
+		}
+	],
+	"character_triggers": [
+		{
+			"id": "UUBP_ShardtailGainImps",
+			"trigger": "post_combat",
+			"descriptions": {
+				"english": "Add a random Imp unit to hand."
+			},
+			"effects": [
+				{
+					"id": "@UUBP_AddRandomImp"
+				}
+			]
+		},
+		{
+			"id": "UUBP_ShardtailGainImps2",
+			"trigger": "post_combat",
+			"descriptions": {
+				"english": "Add a random Imp unit to hand."
+			},
+			"effects": [
+				{
+					"id": "@UUBP_DraftImp"
+				}
+			]
+		}
+	],
+	"effects": [
+		{
+			"id": "UUBP_AddRandomImp",
+			"name": "CardEffectAddBattleCard",
+			"param_int": 3,
+			"param_int_2": 1,
+			"param_card_pool": "@ImpPool"
+		},
+		{
+			"id": "UUBP_DraftImp",
+			"name": "CardEffectDraftBattleCard",
+			"param_int": 3,
+			"param_int_2": 1,
+			"param_int_3": 3,
+			"param_card_pool": "@ImpPool"
+		}
+	],
+	"room_modifiers": [
+		{
+			"id": "UUBP_ShardtailGainImps",
+			"name": "RoomStateUnitCostModifier",
+			"descriptions": {
+				"english": "Imp units cost [power][ember] on this floor."
+			},
+			"param_subtype": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
+			"param_int": -1
+		}
+	],
 	"upgrades": [
 		{
 			"id": "UUBP_ShardtailGainImps",
@@ -63,102 +159,6 @@
 				{
 					"id": "@UUBP_ShardtailGainImps2"
 				}
-			]
-		}
-	],
-	"effects": [
-		{
-			"id": "UUBP_AddRandomImp",
-			"name": "CardEffectAddBattleCard",
-			"param_int": 3,
-			"param_int_2": 1,
-			"param_card_pool": "@ImpPool"
-		},
-		{
-			"id": "UUBP_DraftImp",
-			"name": "CardEffectDraftBattleCard",
-			"param_int": 3,
-			"param_int_2": 1,
-			"param_int_3": 3,
-			"param_card_pool": "@ImpPool"
-		}
-	],
-	"character_triggers": [
-		{
-			"id": "UUBP_ShardtailGainImps",
-			"trigger": "post_combat",
-			"descriptions": {
-				"english": "Add a random Imp unit to hand."
-			},
-			"effects": [
-				{
-					"id": "@UUBP_AddRandomImp"
-				}
-			]
-		},
-		{
-			"id": "UUBP_ShardtailGainImps2",
-			"trigger": "post_combat",
-			"descriptions": {
-				"english": "Add a random Imp unit to hand."
-			},
-			"effects": [
-				{
-					"id": "@UUBP_DraftImp"
-				}
-			]
-		}
-	],
-	"room_modifiers": [
-		{
-			"id": "UUBP_ShardtailGainImps",
-			"name": "RoomStateUnitCostModifier",
-			"descriptions": {
-				"english": "Imp units cost [power][ember] on this floor."
-			},
-			"param_subtype": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
-			"param_int": -1
-		}
-	],
-	"card_pools": [
-		{
-			"id": "ImpPool",
-			"cards": [
-				"StarterImp",
-				"StarterImp",
-				"StarterImp",
-
-				"WelderHelper",
-				"WelderHelper",
-				"WelderHelper",
-				"WelderHelper",
-				"WelderHelper",
-				"WelderHelper",
-
-				"AggressiveImp",
-				"AggressiveImp",
-				"AggressiveImp",
-				"AggressiveImp",
-				"AggressiveImp",
-				"AggressiveImp",
-
-				"UnstableInfery",
-				"UnstableInfery",
-				"UnstableInfery",
-				"UnstableInfery",
-				"UnstableInfery",
-				"UnstableInfery",
-
-				"EmberedInfery",
-				"EmberedInfery",
-				"EmberedInfery",
-				"EmberedInfery",
-				"EmberedInfery",
-				"EmberedInfery",
-
-				"EnlightenedInfery",
-
-				"TranscendImp"
 			]
 		}
 	]

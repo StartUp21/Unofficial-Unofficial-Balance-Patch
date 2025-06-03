@@ -37,9 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="balance_patches\ImpQueenChampion\ShardtailRallyBuf\" />
-    <Folder Include="balance_patches\ImpQueenChampion\ShardtailGainImps\" />
-    <Folder Include="balance_patches\ImpQueenChampion\ShardtailSacrificeImps\" />
+    <Folder Include="balance_patches\StarterTorch\" />
   </ItemGroup>
 
 </Project>

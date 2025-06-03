@@ -23,6 +23,93 @@
           "id": "@UUBP_SelfTempTrample"
         }
       ]
+    },
+    {
+      "id": "UUBP_ImpQueenChampionAbility3",
+      "card_art_reference": "",
+      "names": {
+        "english": "Tyranny III"
+      },
+      "descriptions": {
+        "english": "Gain [rage] [effect1.status0.power]. Gain [trample] until the end of combat."
+      },
+      "ability": true,
+      "cooldown": 1,
+      "effects": [
+        {
+          "id": "@UUBP_SacrificeImp"
+        },
+        {
+          "id": "@UUBP_SelfRage13"
+        },
+        {
+          "id": "@UUBP_SelfTempTrample"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "UUBP_ShardtailRallyBuff",
+      "trigger": "card_monster_played",
+      "descriptions": {
+        "english": "Reduce [cooldown] by [effect0.status0.power]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_SelfCooldownDown1"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_ShardtailRallyBuffRemove",
+      "trigger": "post_combat",
+      "hide_tooltip": true,
+      "allow_tooltips_when_hidden": false,
+      "descriptions": {
+        "english": ""
+      },
+      "effects": [
+        {
+          "id": "@UUBP_SelfTempTrampleLess"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_SelfCooldownDown1",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "cooldown",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SelfRage8",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SelfTempTrample",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@UUBP_TempTrample"
+    },
+    {
+      "id": "UUBP_SelfTempTrampleLess",
+      "name": "CardEffectRemoveTempUpgradeFromUnit",
+      "target_mode": "self",
+      "param_upgrade": "@UUBP_TempTrample"
     }
   ],
   "upgrades": [
@@ -108,70 +195,16 @@
           "count": 60
         }
       ]
-    }
-  ],
-  "character_triggers": [
-    {
-      "id": "UUBP_ShardtailRallyBuff",
-      "trigger": "card_monster_played",
-      "descriptions": {
-        "english": "Reduce [cooldown] by [effect0.status0.power]."
-      },
-      "effects": [
-        {
-          "id": "@UUBP_SelfCooldownDown1"
-        }
-      ]
     },
     {
-      "id": "UUBP_ShardtailRallyBuffRemove",
-      "trigger": "post_combat",
-      "hide_tooltip": true,
-      "allow_tooltips_when_hidden": false,
-      "descriptions": {
-        "english": ""
-      },
-      "effects": [
+      "id": "UUBP_TempTrample",
+      "allow_secondary_tooltip_placement": true,
+      "status_effect_upgrades": [
         {
-          "id": "@UUBP_SelfTempTrampleLess"
-        }
-      ]
-    }
-  ],
-  "effects": [
-    {
-      "id": "UUBP_SelfCooldownDown1",
-      "name": "CardEffectRemoveStatusEffect",
-      "target_mode": "self",
-      "param_status_effects": [
-        {
-          "status": "cooldown",
+          "status": "trample",
           "count": 1
         }
       ]
-    },
-    {
-      "id": "UUBP_SelfRage8",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "self",
-      "param_status_effects": [
-        {
-          "status": "buff",
-          "count": 8
-        }
-      ]
-    },
-    {
-      "id": "UUBP_SelfTempTrample",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_upgrade": "@UUBP_TempTrample"
-    },
-    {
-      "id": "UUBP_SelfTempTrampleLess",
-      "name": "CardEffectRemoveTempUpgradeFromUnit",
-      "target_mode": "self",
-      "param_upgrade": "@UUBP_TempTrample"
     }
   ]
 }
