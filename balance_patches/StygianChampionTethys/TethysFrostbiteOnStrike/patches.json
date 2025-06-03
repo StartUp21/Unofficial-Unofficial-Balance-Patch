@@ -1,0 +1,193 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "character_triggers": [
+    {
+      "id": "UUBP_TethysFrostbiteOnStrikeJumpscare",
+      "trigger": "post_combat",
+      "descriptions": {
+        "english": "Return this unit to hand."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_SelfDespawn"
+        },
+        {
+          "id": "@UUBP_SelfReturnToHand"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_TethysFrostbiteOnStrike1",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_EnemiesFrostbite8"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_TethysFrostbiteOnStrike2",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_EnemiesFrostbite16"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_TethysFrostbiteOnStrike3",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_EnemiesFrostbite32"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_SelfDespawn",
+      "name": "CardEffectDespawnCharacter",
+      "param_int": 1,
+      "param_bool": false
+    },
+    {
+      "id": "UUBP_SelfReturnToHand",
+      "name": "CardEffectReturnToHand",
+      "target_mode": "self",
+      "param_int": 3
+    },
+    {
+      "id": "UUBP_EnemiesFrostbite8",
+      "name": "CardEffectAddStatusEffect",
+      "target_team": "heroes",
+      "target_mode": "targetless",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "UUBP_EnemiesFrostbite16",
+      "name": "CardEffectAddStatusEffect",
+      "target_team": "heroes",
+      "target_mode": "targetless",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "UUBP_EnemiesFrostbite32",
+      "name": "CardEffectAddStatusEffect",
+      "target_team": "heroes",
+      "target_mode": "targetless",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 32
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/upgrades.json",
+      "id": "UUBP_TethysFrostbiteOnStrike",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Chillwind"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 10,
+      "bonus_hp": 1,
+      "trait_upgrades": [
+        {
+          "id": "@UUBP_Permafrost"
+        }
+      ],
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_TethysFrostbiteOnStrike1"
+        },
+        {
+          "id": "@UUBP_TethysFrostbiteOnStrikeJumpscare"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_TethysFrostbiteOnStrike2",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Chillwind II"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 25,
+      "bonus_hp": 2,
+      "trait_upgrades": [
+        {
+          "id": "@UUBP_Permafrost"
+        }
+      ],
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_TethysFrostbiteOnStrike2"
+        },
+        {
+          "id": "@UUBP_TethysFrostbiteOnStrikeJumpscare"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_TethysFrostbiteOnStrike3",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Chillwind III"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 60,
+      "bonus_hp": 3,
+      "status_effect_upgrades": [
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ],
+      "trait_upgrades": [
+        {
+          "id": "@UUBP_Permafrost"
+        }
+      ],
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_TethysFrostbiteOnStrike3"
+        },
+        {
+          "id": "@UUBP_TethysFrostbiteOnStrikeJumpscare"
+        }
+      ]
+    }
+  ]
+}

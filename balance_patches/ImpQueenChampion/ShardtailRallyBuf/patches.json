@@ -100,6 +100,17 @@
       ]
     },
     {
+      "id": "UUBP_SelfRage13",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 13
+        }
+      ]
+    },
+    {
       "id": "UUBP_SelfTempTrample",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",

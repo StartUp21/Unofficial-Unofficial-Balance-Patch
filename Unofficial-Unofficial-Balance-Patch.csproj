@@ -38,6 +38,7 @@
 
   <ItemGroup>
     <Folder Include="balance_patches\StarterTorch\" />
+    <Folder Include="balance_patches\StygianChampionTethys\TethysFrostbiteOnStrike\" />
   </ItemGroup>
 
 </Project>
