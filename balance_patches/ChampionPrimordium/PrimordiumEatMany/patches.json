@@ -1,0 +1,65 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "upgrades": [
+    {
+      "id": "UUBP_PrimordiumEatMany",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Stalwart Snack"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 1,
+      "bonus_hp": 7,
+      "bonus_size": 0,
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_PrimordiumEatMany2",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Stalwart Snack II"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 3,
+      "bonus_hp": 17,
+      "bonus_size": 0,
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "UUBP_PrimordiumEatMany3",
+      "use_upgrade_hightlight_tags": true,
+      "allow_secondary_tooltip_placement": true,
+      "titles": {
+        "english": "Stalwart Snack III"
+      },
+      "descriptions": {
+        "english": ""
+      },
+      "bonus_damage": 5,
+      "bonus_hp": 32,
+      "bonus_size": 0,
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 7
+        }
+      ]
+    }
+  ]
+}
