@@ -59,7 +59,7 @@
 			"id": "UUBP_ShardtailGainImps2",
 			"trigger": "post_combat",
 			"descriptions": {
-				"english": "Add a random Imp unit to hand."
+				"english": "Choose an Imp unit to add to your hand out of 3 random options."
 			},
 			"effects": [
 				{
