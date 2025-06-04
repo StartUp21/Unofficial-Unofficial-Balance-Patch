@@ -5,5 +5,14 @@
       "id": "UUBP_Permafrost",
       "name": "CardTraitPermafrost"
     }
+  ],
+  "room_modifiers": [
+    {
+      "id": "UUBP_NothingRoom",
+      "name": "RoomStateNothingModifier",
+      "descriptions": {
+        "english": ""
+      }
+    }
   ]
 }

@@ -100,14 +100,6 @@
 		{
 			"override": true,
 			"id": "ShardtailGainImps",
-			"use_upgrade_hightlight_tags": true,
-			"allow_secondary_tooltip_placement": true,
-			"titles": {
-				"english": "Imp Parade"
-			},
-			"descriptions": {
-				"english": ""
-			},
 			"bonus_damage": 10,
 			"bonus_hp": 5,
 			"trigger_upgrades": [
@@ -115,7 +107,11 @@
 					"id": "@UUBP_ShardtailGainImps"
 				}
 			],
-			"room_modifier_upgrades": []
+			"room_modifier_upgrades": [
+				{
+					"id": "@UUBP_NothingRoom"
+				}
+			]
 		},
 		{
 			"override": true,
