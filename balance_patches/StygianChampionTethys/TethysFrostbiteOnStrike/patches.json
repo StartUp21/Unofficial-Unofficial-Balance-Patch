@@ -105,16 +105,8 @@
   ],
   "upgrades": [
     {
-      "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/upgrades.json",
-      "id": "UUBP_TethysFrostbiteOnStrike",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Chillwind"
-      },
-      "descriptions": {
-        "english": ""
-      },
+      "override": true,
+      "id": "TethysFrostbiteOnStrike",
       "bonus_damage": 10,
       "bonus_hp": 1,
       "trait_upgrades": [
@@ -132,15 +124,8 @@
       ]
     },
     {
-      "id": "UUBP_TethysFrostbiteOnStrike2",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Chillwind II"
-      },
-      "descriptions": {
-        "english": ""
-      },
+      "override": true,
+      "id": "TethysFrostbiteOnStrike2",
       "bonus_damage": 25,
       "bonus_hp": 2,
       "trait_upgrades": [
@@ -158,15 +143,8 @@
       ]
     },
     {
-      "id": "UUBP_TethysFrostbiteOnStrike3",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Chillwind III"
-      },
-      "descriptions": {
-        "english": ""
-      },
+      "override": true,
+      "id": "TethysFrostbiteOnStrike3",
       "bonus_damage": 60,
       "bonus_hp": 3,
       "status_effect_upgrades": [
