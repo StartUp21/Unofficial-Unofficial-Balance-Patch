@@ -63,15 +63,8 @@
   ],
   "upgrades": [
     {
-      "id": "UUBP_ShardtailSacrificeImps",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Imperialist"
-      },
-      "descriptions": {
-        "english": ""
-      },
+      "override": true,
+      "id": "ShardtailSacrificeImps",
       "bonus_damage": 0,
       "bonus_hp": 10,
       "trigger_upgrades": [
@@ -81,15 +74,8 @@
       ]
     },
     {
-      "id": "UUBP_ShardtailSacrificeImps2",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Imperialist II"
-      },
-      "descriptions": {
-        "english": ""
-      },
+      "override": true,
+      "id": "ShardtailSacrificeImps2",
       "bonus_damage": 10,
       "bonus_hp": 20,
       "trigger_upgrades": [
@@ -99,15 +85,8 @@
       ]
     },
     {
+      "override": true,
       "id": "UUBP_ShardtailSacrificeImps3",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Imperialist III"
-      },
-      "descriptions": {
-        "english": ""
-      },
       "bonus_damage": 30,
       "bonus_hp": 40,
       "trigger_upgrades": [

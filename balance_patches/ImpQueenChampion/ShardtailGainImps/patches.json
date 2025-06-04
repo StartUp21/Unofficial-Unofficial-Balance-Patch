@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
 	"card_pools": [
 		{
-			"id": "ImpPool",
+			"id": "UUBP_ImpPool",
 			"cards": [
 				"StarterImp",
 				"StarterImp",
@@ -74,7 +74,7 @@
 			"name": "CardEffectAddBattleCard",
 			"param_int": 3,
 			"param_int_2": 1,
-			"param_card_pool": "@ImpPool"
+			"param_card_pool": "@UUBP_ImpPool"
 		},
 		{
 			"id": "UUBP_DraftImp",
@@ -82,7 +82,7 @@
 			"param_int": 3,
 			"param_int_2": 1,
 			"param_int_3": 3,
-			"param_card_pool": "@ImpPool"
+			"param_card_pool": "@UUBP_ImpPool"
 		}
 	],
 	"room_modifiers": [
@@ -98,7 +98,8 @@
 	],
 	"upgrades": [
 		{
-			"id": "UUBP_ShardtailGainImps",
+			"override": true,
+			"id": "ShardtailGainImps",
 			"use_upgrade_hightlight_tags": true,
 			"allow_secondary_tooltip_placement": true,
 			"titles": {
@@ -113,25 +114,14 @@
 				{
 					"id": "@UUBP_ShardtailGainImps"
 				}
-			]
+			],
+			"room_modifier_upgrades": []
 		},
 		{
-			"id": "UUBP_ShardtailGainImps2",
-			"use_upgrade_hightlight_tags": true,
-			"allow_secondary_tooltip_placement": true,
-			"titles": {
-				"english": "Imp Parade II"
-			},
-			"descriptions": {
-				"english": ""
-			},
+			"override": true,
+			"id": "ShardtailGainImps2",
 			"bonus_damage": 20,
 			"bonus_hp": 5,
-			"room_modifier_upgrades": [
-				{
-					"id": "@UUBP_ShardtailGainImps"
-				}
-			],
 			"trigger_upgrades": [
 				{
 					"id": "@UUBP_ShardtailGainImps"
@@ -139,22 +129,10 @@
 			]
 		},
 		{
-			"id": "UUBP_ShardtailGainImps3",
-			"use_upgrade_hightlight_tags": true,
-			"allow_secondary_tooltip_placement": true,
-			"titles": {
-				"english": "Imp Parade III"
-			},
-			"descriptions": {
-				"english": ""
-			},
+			"override": true,
+			"id": "ShardtailGainImps3",
 			"bonus_damage": 40,
 			"bonus_hp": 5,
-			"room_modifier_upgrades": [
-				{
-					"id": "@UUBP_ShardtailGainImps"
-				}
-			],
 			"trigger_upgrades": [
 				{
 					"id": "@UUBP_ShardtailGainImps2"

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "upgrades": [
+    {
+      "override": true,
+      "id": "PrimordiumStatusEffects",
+      "bonus_damage": 0,
+      "bonus_hp": 0,
+      "status_effect_upgrades": [
+        {
+          "status": "damage shield",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "PrimordiumStatusEffects2",
+      "bonus_damage": 0,
+      "bonus_hp": 0,
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 1
+        },
+        {
+          "status": "damage shield",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "PrimordiumStatusEffects3",
+      "bonus_damage": 0,
+      "bonus_hp": 0,
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 2
+        },
+        {
+          "status": "duality",
+          "count": 1
+        },
+        {
+          "status": "damage shield",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

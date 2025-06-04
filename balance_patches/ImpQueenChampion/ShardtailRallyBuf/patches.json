@@ -125,15 +125,8 @@
   ],
   "upgrades": [
     {
-      "id": "UUBP_ShardtailRallyBuff",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Royalty"
-      },
-      "descriptions": {
-        "english": ""
-      },
+      "override": true,
+      "id": "ShardtailRallyBuff",
       "bonus_damage": 10,
       "bonus_hp": 10,
       "bonus_size": 1,
@@ -150,15 +143,8 @@
       ]
     },
     {
+      "override": true,
       "id": "UUBP_ShardtailRallyBuff2",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Royalty II"
-      },
-      "descriptions": {
-        "english": ""
-      },
       "bonus_damage": 15,
       "bonus_hp": 15,
       "bonus_size": 1,
@@ -179,15 +165,8 @@
       ]
     },
     {
+      "override": true,
       "id": "UUBP_ShardtailRallyBuff3",
-      "use_upgrade_hightlight_tags": true,
-      "allow_secondary_tooltip_placement": true,
-      "titles": {
-        "english": "Royalty III"
-      },
-      "descriptions": {
-        "english": ""
-      },
       "bonus_damage": 30,
       "bonus_hp": 30,
       "bonus_size": 1,
