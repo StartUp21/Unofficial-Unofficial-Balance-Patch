@@ -4,6 +4,13 @@
     {
       "id": "UUBP_Permafrost",
       "name": "CardTraitPermafrost"
+    },
+    {
+      "id": "UUBP_SacrificeNonChampionAnywhere",
+      "name": "CardTraitDummy",
+      "param_description": {
+        "english": "<nobr><b>[sacrifice] </b>non-<b>Champion</b> on any floor</nobr>"
+      }
     }
   ],
   "room_modifiers": [

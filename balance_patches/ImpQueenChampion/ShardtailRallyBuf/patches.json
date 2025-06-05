@@ -10,7 +10,8 @@
       "descriptions": {
         "english": "Gain [rage] [effect1.status0.power]. Gain [trample] until the end of combat."
       },
-      "ability": true,
+      "class": "ClassHellhorned",
+      "is_an_ability": true,
       "cooldown": 1,
       "effects": [
         {
@@ -33,7 +34,8 @@
       "descriptions": {
         "english": "Gain [rage] [effect1.status0.power]. Gain [trample] until the end of combat."
       },
-      "ability": true,
+      "class": "ClassHellhorned",
+      "is_an_ability": true,
       "cooldown": 1,
       "effects": [
         {

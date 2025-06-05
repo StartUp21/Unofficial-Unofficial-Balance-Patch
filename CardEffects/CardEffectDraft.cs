@@ -11,7 +11,7 @@ using UnityEngine;
 namespace Unofficial_Unofficial_Balance_Patch.CardEffects
 {
 	[HarmonyPatch]
-	public class CardEffectDraftBattleCard : CardEffectBase
+	public sealed class CardEffectDraftBattleCard : CardEffectBase
 	{
 		private static readonly List<Action<GrantResult>> callbacks = new List<Action<GrantResult>>();
 		[HarmonyPrefix, HarmonyPatch(typeof(CardDraftScreen), "ApplyDraft")]
@@ -36,10 +36,6 @@ namespace Unofficial_Unofficial_Balance_Patch.CardEffects
 			cardChosenCallback(new GrantResult(cardState.GetCardDataID(), cardState.GetAssetName(), "CardDraft"));
 			cardChosenCallback_f.SetValue(null);
 			return false;
-		}
-		[HarmonyReversePatch, HarmonyPatch(typeof(DraftScreenBase), "ApplyDraft")]
-		public static void base_ApplyDraft(DraftScreenBase __instance, IDraftableUI draftedItem)
-		{
 		}
 		private bool _canPlayWhenHandFull = true;
 		public override bool CanPlayAfterBossDead => false;

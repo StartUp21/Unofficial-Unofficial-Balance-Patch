@@ -1,0 +1,109 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "UUBP_PrimordiumAttackStatAbility",
+      "card_art_reference": "",
+      "names": {
+        "english": "Phagocytosis"
+      },
+      "descriptions": {
+        "english": "Gain their [attack] and [health]."
+      },
+      "class": "ClassUmbra",
+      "is_an_ability": true,
+      "cooldown": 2,
+      "effects": [
+        {
+          "id": "@UUBP_TransferStatsFromUnit"
+        },
+        {
+          "id": "@UUBP_SacrificeNonChampion"
+        }
+      ],
+      "can_ability_target_other_floors": true
+    },
+    {
+      "id": "UUBP_PrimordiumAttackStatAbility2",
+      "card_art_reference": "",
+      "names": {
+        "english": "Phagocytosis II"
+      },
+      "descriptions": {
+        "english": "Gain their [attack] and [health]."
+      },
+      "class": "ClassUmbra",
+      "is_an_ability": true,
+      "cooldown": 1,
+      "effects": [
+        {
+          "id": "@UUBP_TransferStatsFromUnit"
+        },
+        {
+          "id": "@UUBP_SacrificeNonChampion"
+        }
+      ],
+      "can_ability_target_other_floors": true
+    },
+    {
+      "id": "UUBP_PrimordiumAttackStatAbility3",
+      "card_art_reference": "",
+      "names": {
+        "english": "Phagocytosis III"
+      },
+      "descriptions": {
+        "english": "Gain their [attack] and [health]."
+      },
+      "class": "ClassUmbra",
+      "is_an_ability": true,
+      "cooldown": 0,
+      "effects": [
+        {
+          "id": "@UUBP_TransferStatsFromUnit"
+        },
+        {
+          "id": "@UUBP_SacrificeNonChampion"
+        }
+      ],
+      "can_ability_target_other_floors": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_TransferStatsFromUnit",
+      "name": "CardEffectTransferStatsFromUnit",
+      "target_team": "monsters",
+      "target_mode": "drop_target_character"
+    },
+    {
+      "id": "UUBP_SacrificeNonChampion",
+      "name": "CardEffectSacrificeNonChampion",
+      "target_team": "monsters",
+      "target_mode": "drop_target_character",
+      "param_multiplier": 0
+    }
+  ],
+  "upgrades": [
+    {
+      "override": true,
+      "id": "PrimordiumAttackStat",
+      "bonus_damage": 12,
+      "bonus_hp": 1,
+      "ability_upgrade": "@UUBP_PrimordiumAttackStatAbility"
+    },
+    {
+      "override": true,
+      "id": "PrimordiumAttackStat2",
+      "bonus_damage": 37,
+      "bonus_hp": 3,
+      "ability_upgrade": "@UUBP_PrimordiumAttackStatAbility2"
+    },
+    {
+      "override": true,
+      "id": "PrimordiumAttackStat3",
+      "bonus_damage": 77,
+      "bonus_hp": 5,
+      "ability_upgrade": "@UUBP_PrimordiumAttackStatAbility3"
+    }
+  ]
+}

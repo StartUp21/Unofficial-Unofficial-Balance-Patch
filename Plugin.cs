@@ -40,6 +40,7 @@ namespace Unofficial_Unofficial_Balance_Patch
 						.Select(x => x.GetSection("id").ParseString())
 						.Cast<string>().ToList() ?? new List<string>();
 					*/
+					/*
 					var allGameData = saveManager.GetAllGameData();
 					foreach (var upgradeTree in allGameData.GetAllClassDatas()
 						.SelectMany(x => (List<ChampionData>)AccessTools.Field(typeof(ClassData), "champions").GetValue(x))
@@ -54,7 +55,7 @@ namespace Unofficial_Unofficial_Balance_Patch
 								list[i] = data;
 							}
 						}
-					}
+					}*/
 				}
 			});
 			new Harmony(PluginInfo.PLUGIN_GUID + "-Harmony").PatchAll(Assembly.GetExecutingAssembly());

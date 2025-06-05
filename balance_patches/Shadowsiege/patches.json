@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "Shadowsiege",
+      "triggers": [
+        {
+          "id": "@UUBP_Shadowsiege"
+        }
+      ]
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "UUBP_Shadowsiege",
+      "trigger": "on_unplayed_negative",
+      "descriptions": {
+        "english": "Apply [emberdrain] [effect0.upgrade0.status0.power] and -[effect0.upgrade0.costreductionabs][ember]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_TradeCostDownEmberdrain2"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_TradeCostDownEmberdrain2",
+      "name": "CardEffectAddTempUpgradeToCurrentCard",
+      "target_mode": "self",
+      "param_upgrade": "@UUBP_TradeCostDownEmberdrain2"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UUBP_TradeCostDownEmberdrain2",
+      "cost_reduction": 2,
+      "status_effect_upgrades": [
+        {
+          "status": "scorch",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

@@ -52,7 +52,7 @@
 			"descriptions": {
 				"english": "Gain <b>Rage 5</b>."
 			},
-			"ability": true,
+			"is_an_ability": true,
 			"cooldown": 1,
 			"effects": [
 				{
@@ -72,7 +72,7 @@
 			"descriptions": {
 				"english": "Gain <b>Rage 8</b>. Gain <b>Trample</b> until the end of combat."
 			},
-			"ability": true,
+			"is_an_ability": true,
 			"cooldown": 1,
 			"effects": [
 				{
@@ -95,7 +95,7 @@
 			"descriptions": {
 				"english": "Gain <b>Rage 13</b>. Gain <b>Trample</b> until the end of combat."
 			},
-			"ability": true,
+			"is_an_ability": true,
 			"cooldown": 1,
 			"effects": [
 				{

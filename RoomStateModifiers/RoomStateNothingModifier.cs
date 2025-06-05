@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Unofficial_Unofficial_Balance_Patch.RoomStates
+namespace Unofficial_Unofficial_Balance_Patch.RoomStateModifiers
 {
-	public class RoomStateNothingModifier : RoomStateModifierBase
+	public sealed class RoomStateNothingModifier : RoomStateModifierBase
 	{
 	}
 }

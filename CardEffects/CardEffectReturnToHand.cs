@@ -8,7 +8,7 @@ using static HandUI;
 
 namespace Unofficial_Unofficial_Balance_Patch.CardEffects
 {
-	public class CardEffectReturnToHand : CardEffectBase
+	public sealed class CardEffectReturnToHand : CardEffectBase
 	{
 
 		public override bool CanPlayAfterBossDead => true;
