@@ -14,7 +14,6 @@ namespace Unofficial_Unofficial_Balance_Patch.CardEffects
 			{
 			};
 		}
-
 		public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
 		{
 			if (cardEffectParams.targets.Count == 0)
@@ -43,7 +42,6 @@ namespace Unofficial_Unofficial_Balance_Patch.CardEffects
 				}
 			}
 		}
-
 		private IEnumerator AddStatToTarget(CharacterState target, int attack, int health, bool display_effect, ICoreGameManagers coreGameManagers)
 		{
 			if (attack > 0)
