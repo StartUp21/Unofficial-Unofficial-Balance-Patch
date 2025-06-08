@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "StarterDamageForMorsel",
+      "descriptions": {
+        "english": "Deal 4 damage to a random enemy unit."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_RandomeEnemyDamage4"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_RandomeEnemyDamage4",
+      "name": "CardEffectDamage",
+      "param_int": 4,
+      "team": "heroes",
+      "target_mode": "random_in_room"
+    }
+  ]
+}

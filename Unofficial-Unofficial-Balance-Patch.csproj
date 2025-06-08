@@ -38,6 +38,7 @@
 
   <ItemGroup>
     <Folder Include="balance_patches\Hellhorned\StarterTorch\" />
+    <Folder Include="balance_patches\Umbra\StarterDamageForMorsel\" />
   </ItemGroup>
 
 </Project>
