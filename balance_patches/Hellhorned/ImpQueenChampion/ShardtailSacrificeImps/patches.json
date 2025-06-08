@@ -86,7 +86,7 @@
     },
     {
       "override": true,
-      "id": "UUBP_ShardtailSacrificeImps3",
+      "id": "ShardtailSacrificeImps3",
       "bonus_damage": 30,
       "bonus_hp": 40,
       "trigger_upgrades": [

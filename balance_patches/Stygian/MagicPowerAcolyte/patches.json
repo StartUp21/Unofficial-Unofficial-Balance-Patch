@@ -38,7 +38,7 @@
           "count": 8
         }
       ],
-      "is_an_ability": "@UUBP_AddOfferingToken",
+      "ability": "@UUBP_AddOfferingToken",
       "subtypes": [
         "SubtypesData_Mage"
       ]

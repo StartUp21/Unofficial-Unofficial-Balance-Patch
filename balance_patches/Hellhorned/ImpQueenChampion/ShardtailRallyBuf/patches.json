@@ -146,7 +146,7 @@
     },
     {
       "override": true,
-      "id": "UUBP_ShardtailRallyBuff2",
+      "id": "ShardtailRallyBuff2",
       "bonus_damage": 15,
       "bonus_hp": 15,
       "bonus_size": 1,
@@ -168,7 +168,7 @@
     },
     {
       "override": true,
-      "id": "UUBP_ShardtailRallyBuff3",
+      "id": "ShardtailRallyBuff3",
       "bonus_damage": 30,
       "bonus_hp": 30,
       "bonus_size": 1,

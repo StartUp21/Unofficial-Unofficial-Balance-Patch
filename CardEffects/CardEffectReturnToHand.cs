@@ -25,8 +25,9 @@ namespace Unofficial_Unofficial_Balance_Patch.CardEffects
 			var card = character.GetSpawnerCard();
 			standbyCardsBeingProcessed.Add(card);
 			card.ClearRemoveFromStandByPileOverride();
-			coreGameManagers.GetCardManager().GetHand().Insert(0, card);
-			handUI.DrawCard(card, 0f,	instantly: false, skipDrawAnimation: false, DrawSource.Deck);
+			cardManager.GetDrawPile().Insert(0, card);
+			cardManager.DrawSpecificCard(card, drawSource: DrawSource.Deck);
+			// handUI.DrawCard(card, 0f,	instantly: false, skipDrawAnimation: false, DrawSource.Deck);
 			yield return standByPile[card].OnReturned(card, standByPile[card].GetReturnLocation(), character);
 			standByPile.Remove(card);
 			standbyCardsBeingProcessed.Remove(card);

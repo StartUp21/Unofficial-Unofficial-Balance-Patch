@@ -43,7 +43,7 @@
           "count": 1
         }
       ],
-      "is_an_ability": "@UUBP_LightUpFurnace",
+      "ability": "@UUBP_LightUpFurnace",
       "subtypes": [
         "SubtypesData_Automaton"
       ]

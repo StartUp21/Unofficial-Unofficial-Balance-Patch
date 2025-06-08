@@ -5,7 +5,7 @@
       "id": "UUBP_TethysFrostbiteOnStrikeJumpscare",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Return this unit to hand."
+        "english": "Return this unit to your hand."
       },
       "effects": [
         {
