@@ -11,14 +11,14 @@
   "cards": [
     {
       "id": "UUBP_AddOfferingToken",
-      "card_art_reference": "",
+      "card_art": "",
       "names": {
         "english": "Abyssal Chant"
       },
       "descriptions": {
         "english": "Add an <b>Offering Token</b> spell with [ephemeral] to your hand."
       },
-      "ability": true,
+      "is_an_ability": true,
       "cooldown": 2,
       "targetless": true,
       "effects": [
@@ -38,7 +38,7 @@
           "count": 8
         }
       ],
-      "ability": "@UUBP_AddOfferingToken",
+      "is_an_ability": "@UUBP_AddOfferingToken",
       "subtypes": [
         "SubtypesData_Mage"
       ]

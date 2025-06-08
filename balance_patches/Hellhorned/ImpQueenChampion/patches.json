@@ -3,7 +3,7 @@
   "cards": [
     {
       "id": "UUBP_ImpQueenChampionAbility",
-      "card_art_reference": "",
+      "card_art": "",
       "names": {
         "english": "Tyranny"
       },
@@ -28,7 +28,7 @@
       "override": true,
       "id": "MonsterChampionHellhornedShardtail",
       "attack_damage": 5,
-      "ability": "@UUBP_ImpQueenChampionAbility",
+      "is_an_ability": "@UUBP_ImpQueenChampionAbility",
       "subtypes": [
         "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
       ]

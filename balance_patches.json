@@ -45,7 +45,7 @@
 	"cards": [
 		{
 			"id": "UUBP_ImpQueenChampionAbility",
-			"card_art_reference": "",
+			"card_art": "",
 			"names": {
 				"english": "Tyranny"
 			},
@@ -65,7 +65,7 @@
 		},
 		{
 			"id": "UUBP_ImpQueenChampionAbility2",
-			"card_art_reference": "",
+			"card_art": "",
 			"names": {
 				"english": "Tyranny II"
 			},
@@ -88,7 +88,7 @@
 		},
 		{
 			"id": "UUBP_ImpQueenChampionAbility3",
-			"card_art_reference": "",
+			"card_art": "",
 			"names": {
 				"english": "Tyranny III"
 			},
@@ -447,8 +447,8 @@
 		{
 			"id": "UUBP_ShardtailRallyBuffRemove",
 			"trigger": "post_combat",
-			"hide_tooltip": true,
-			"allow_tooltips_when_hidden": false,
+			"hide_visual_and_ignore_silence": true,
+			"allow_additional_tooltips_when_visual_is_hidden": false,
 			"descriptions": {
 				"english": ""
 			},

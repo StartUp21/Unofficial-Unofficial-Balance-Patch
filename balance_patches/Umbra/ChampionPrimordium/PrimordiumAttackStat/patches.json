@@ -3,7 +3,7 @@
   "cards": [
     {
       "id": "UUBP_PrimordiumAttackStatAbility",
-      "card_art_reference": "",
+      "card_art": "",
       "names": {
         "english": "Phagocytosis"
       },
@@ -25,7 +25,7 @@
     },
     {
       "id": "UUBP_PrimordiumAttackStatAbility2",
-      "card_art_reference": "",
+      "card_art": "",
       "names": {
         "english": "Phagocytosis II"
       },
@@ -47,7 +47,7 @@
     },
     {
       "id": "UUBP_PrimordiumAttackStatAbility3",
-      "card_art_reference": "",
+      "card_art": "",
       "names": {
         "english": "Phagocytosis III"
       },
