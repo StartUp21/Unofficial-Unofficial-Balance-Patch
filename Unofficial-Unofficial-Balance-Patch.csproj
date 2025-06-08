@@ -37,10 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="balance_patches\ChampionPrimordium\PrimordiumAttackStat\" />
-    <Folder Include="balance_patches\ChampionPrimordium\PrimordiumStatusEffects\" />
-    <Folder Include="balance_patches\StarterTorch\" />
-    <Folder Include="balance_patches\StygianChampionTethys\TethysFrostbiteOnStrike\" />
+    <Folder Include="balance_patches\Hellhorned\StarterTorch\" />
   </ItemGroup>
 
 </Project>
