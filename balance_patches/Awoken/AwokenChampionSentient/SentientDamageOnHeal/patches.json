@@ -138,11 +138,6 @@
         {
           "id": "@UUBP_Explosive"
         }
-      ],
-      "trigger_upgrades": [
-        {
-          "id": "@UUBP_SentientDamageOnHeal"
-        }
       ]
     },
     {
@@ -153,11 +148,6 @@
         {
           "id": "@UUBP_Explosive"
         }
-      ],
-      "trigger_upgrades": [
-        {
-          "id": "@UUBP_SentientDamageOnHeal2"
-        }
       ]
     },
     {
@@ -167,11 +157,6 @@
       "trait_upgrades": [
         {
           "id": "@UUBP_Explosive"
-        }
-      ],
-      "trigger_upgrades": [
-        {
-          "id": "@UUBP_SentientDamageOnHeal3"
         }
       ]
     }

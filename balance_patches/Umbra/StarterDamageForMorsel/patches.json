@@ -7,19 +7,20 @@
       "descriptions": {
         "english": "Deal 4 damage to a random enemy unit."
       },
+      "cost": 0,
       "effects": [
         {
-          "id": "@UUBP_RandomeEnemyDamage4"
+          "id": "@UUBP_RandomEnemyDamage4"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "UUBP_RandomeEnemyDamage4",
+      "id": "UUBP_RandomEnemyDamage4",
       "name": "CardEffectDamage",
       "param_int": 4,
-      "team": "heroes",
+      "target_team": "heroes",
       "target_mode": "random_in_room"
     }
   ]
