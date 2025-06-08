@@ -11,7 +11,7 @@
         }
       ],
       "descriptions": {
-        "english": "Restore [effect0.power] health.<br>Healing over max health applies [spikes] instead."
+        "english": "Restore [effect0.power] health.[halfbreak]Healing over max health applies [spikes] instead."
       }
     }
   ],

@@ -13,7 +13,7 @@
         }
       ],
       "descriptions": {
-        "english": "Apply +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].<br>Draw <b>+[effect1.power]</b> next turn."
+        "english": "Apply +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].[halfbreak]Draw +[effect1.power] next turn."
       }
     }
   ],

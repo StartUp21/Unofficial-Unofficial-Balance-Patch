@@ -6,6 +6,10 @@
       "name": "CardTraitPermafrost"
     },
     {
+      "id": "UUBP_Pyrebound",
+      "name": "CardTraitLimitedRange"
+    },
+    {
       "id": "UUBP_SacrificeNonChampionAnywhere",
       "name": "CardTraitDummy",
       "param_description": {

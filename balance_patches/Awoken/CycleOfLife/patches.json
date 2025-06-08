@@ -13,7 +13,7 @@
         }
       ],
       "descriptions": {
-        "english": "Apply [effect0.power] max health.<br>Draw <b>+[effect1.power]</b> next turn."
+        "english": "Apply [effect0.power] max health.[halfbreak]Draw +[effect1.power] next turn."
       }
     }
   ],

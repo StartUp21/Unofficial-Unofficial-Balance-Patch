@@ -12,6 +12,7 @@
       },
       "is_an_ability": true,
       "cooldown": 2,
+      "targetless": true,
       "effects": [
         {
           "id": "@UUBP_Heal1"
@@ -29,6 +30,7 @@
       },
       "is_an_ability": true,
       "cooldown": 2,
+      "targetless": true,
       "effects": [
         {
           "id": "@UUBP_Heal1"
@@ -49,6 +51,7 @@
       },
       "is_an_ability": true,
       "cooldown": 2,
+      "targetless": true,
       "effects": [
         {
           "id": "@UUBP_Heal1"

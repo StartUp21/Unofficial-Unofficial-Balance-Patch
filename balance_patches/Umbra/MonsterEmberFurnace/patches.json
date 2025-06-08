@@ -23,7 +23,11 @@
       "override": true,
       "id": "EmberForge",
       "cost": 3,
-      "effects": []
+      "traits": [
+        {
+          "id": "@UUBP_Pyrebound"
+        }
+      ]
     }
   ],
   "characters": [
@@ -37,10 +41,6 @@
         {
           "status": "immobile",
           "count": 1
-        },
-        {
-          "status": "scorch",
-          "count": 2
         }
       ],
       "ability": "@UUBP_LightUpFurnace",

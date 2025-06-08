@@ -136,7 +136,13 @@
       "id": "PrimordiumAttackStat3",
       "bonus_damage": 27,
       "bonus_hp": 5,
-      "ability_upgrade": "@UUBP_PrimordiumAttackStatAbility3"
+      "ability_upgrade": "@UUBP_PrimordiumAttackStatAbility3",
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ]
     }
   ]
 }

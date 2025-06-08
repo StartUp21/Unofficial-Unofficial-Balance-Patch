@@ -17,7 +17,7 @@
         }
       ],
       "descriptions": {
-        "english": "Restore [effect0.power] health, twice.<br>Apply [regen] [effect2.status0.power]."
+        "english": "Restore [effect0.power] health, twice.[halfbreak]Apply [regen] [effect2.status0.power]."
       }
     }
   ],
