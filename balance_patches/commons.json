@@ -11,6 +11,10 @@
       "param_description": {
         "english": "<nobr><b>[sacrifice] </b>non-<b>Champion</b> on any floor</nobr>"
       }
+    },
+    {
+      "id": "UUBP_Explosive",
+      "name": "CardTraitDamageOverflow"
     }
   ],
   "room_modifiers": [

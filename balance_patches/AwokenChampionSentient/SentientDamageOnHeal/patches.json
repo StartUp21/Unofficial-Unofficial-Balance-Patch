@@ -1,0 +1,176 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "UUBP_SentientDamageOnHealAbility",
+      "card_art": "",
+      "names": {
+        "english": "Detonate"
+      },
+      "descriptions": {
+        "english": "Restore [effect0.power] health."
+      },
+      "is_an_ability": true,
+      "cooldown": 2,
+      "effects": [
+        {
+          "id": "@UUBP_Heal1"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SentientDamageOnHealAbility2",
+      "card_art": "",
+      "names": {
+        "english": "Detonate II"
+      },
+      "descriptions": {
+        "english": "Restore [effect0.power] health, twice."
+      },
+      "is_an_ability": true,
+      "cooldown": 2,
+      "effects": [
+        {
+          "id": "@UUBP_Heal1"
+        },
+        {
+          "id": "@UUBP_Heal1"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SentientDamageOnHealAbility3",
+      "card_art": "",
+      "names": {
+        "english": "Detonate III"
+      },
+      "descriptions": {
+        "english": "Restore [effect0.power] health, thrice."
+      },
+      "is_an_ability": true,
+      "cooldown": 2,
+      "effects": [
+        {
+          "id": "@UUBP_Heal1"
+        },
+        {
+          "id": "@UUBP_Heal1"
+        },
+        {
+          "id": "@UUBP_Heal1"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "UUBP_SentientDamageOnHeal",
+      "trigger": "on_heal",
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to the front enemy unit."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_FrontEnemyDamage40"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SentientDamageOnHeal2",
+      "trigger": "on_heal",
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to the front enemy unit."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_FrontEnemyDamage80"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SentientDamageOnHeal3",
+      "trigger": "on_heal",
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to the front enemy unit, twice."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_FrontEnemyDamage80"
+        },
+        {
+          "id": "@UUBP_FrontEnemyDamage80"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_Heal1",
+      "name": "CardEffectHeal",
+      "param_int": 1,
+      "target_team": "both",
+      "target_mode": "self"
+    },
+    {
+      "id": "UUBP_FrontEnemyDamage40",
+      "name": "CardEffectDamage",
+      "param_int": 40,
+      "target_team": "heroes",
+      "target_mode": "front_in_room"
+    },
+    {
+      "id": "UUBP_FrontEnemyDamage80",
+      "name": "CardEffectDamage",
+      "param_int": 80,
+      "target_team": "heroes",
+      "target_mode": "front_in_room"
+    }
+  ],
+  "upgrades": [
+    {
+      "override": true,
+      "id": "SentientDamageOnHeal",
+      "ability_upgrade": "@UUBP_SentientDamageOnHealAbility",
+      "trait_upgrades": [
+        {
+          "id": "@UUBP_Explosive"
+        }
+      ],
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_SentientDamageOnHeal"
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "SentientDamageOnHeal2",
+      "ability_upgrade": "@UUBP_SentientDamageOnHealAbility2",
+      "trait_upgrades": [
+        {
+          "id": "@UUBP_Explosive"
+        }
+      ],
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_SentientDamageOnHeal2"
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "SentientDamageOnHeal3",
+      "ability_upgrade": "@UUBP_SentientDamageOnHealAbility3",
+      "trait_upgrades": [
+        {
+          "id": "@UUBP_Explosive"
+        }
+      ],
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_SentientDamageOnHeal3"
+        }
+      ]
+    }
+  ]
+}
