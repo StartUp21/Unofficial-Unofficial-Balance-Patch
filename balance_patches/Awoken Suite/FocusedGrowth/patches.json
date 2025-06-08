@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "FocusedGrowth",
+      "cost":  2,
+      "effects": [
+        {
+          "id": "@UUBP_Heal15SpikesOnOverheal"
+        }
+      ],
+      "descriptions": {
+        "english": "Restore [effect0.power] health.<br>Healing over max health applies [spikes] instead."
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_Heal15SpikesOnOverheal",
+      "name": "CardEffectHealAndOverheal",
+      "param_int": 15,
+      "target_team": "both",
+      "target_mode": "drop_target_character",
+      "param_status_effects": [
+        {
+          "status": "spikes",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

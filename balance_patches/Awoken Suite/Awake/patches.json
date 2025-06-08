@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "Awake",
+      "cost":  2,
+      "effects": [
+        {
+          "id": "@UUBP_Heal10"
+        },
+        {
+          "id": "@UUBP_Heal10"
+        },
+        {
+          "id": "@UUBP_Regen4"
+        }
+      ],
+      "descriptions": {
+        "english": "Restore [effect0.power] health, twice.<br>Apply [regen] [effect2.status0.power]."
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_Heal10",
+      "name": "CardEffectHeal",
+      "param_int": 10,
+      "target_team": "both",
+      "target_mode": "drop_target_character"
+    },
+    {
+      "id": "UUBP_Regen4",
+      "name": "CardEffectAddStatusEffect",
+      "target_team": "both",
+      "target_mode": "drop_target_character",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "CycleOfLife",
+      "effects": [
+        {
+          "id": "@UUBP_30MaxHPToUnit"
+        },
+        {
+          "id": "@UUBP_DrawPlus2"
+        }
+      ],
+      "descriptions": {
+        "english": "Apply [effect0.power] max health.<br>Draw <b>+[effect1.power]</b> next turn."
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_30MaxHPToUnit",
+      "name": "CardEffectAdjustMaxHealth",
+      "param_int": 30,
+      "target_team": "both",
+      "target_mode": "drop_target_character"
+    },
+    {
+      "id": "UUBP_DrawPlus2",
+      "name": "CardEffectDrawAdditionalNextTurn",
+      "param_int": 2,
+      "use_int_range": false
+    }
+  ]
+}

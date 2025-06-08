@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "Sharpen",
+      "effects": [
+        {
+          "id": "@UUBP_10AttackToUnit"
+        },
+        {
+          "id": "@UUBP_Spikes10"
+        }
+      ],
+      "descriptions": {
+        "english": "Apply +[effect0.upgrade.bonusdamage][attack] and [spikes] [effect1.status0.power]."
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_10AttackToUnit",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_upgrade": "@UUBP_10Attack"
+    },
+    {
+      "id": "UUBP_Spikes10",
+      "name": "CardEffectAddStatusEffect",
+      "target_team": "both",
+      "target_mode": "drop_target_character",
+      "param_status_effects": [
+        {
+          "status": "spikes",
+          "count": 10
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UUBP_10Attack",
+      "bonus_damage": 10
+    }
+  ]
+}

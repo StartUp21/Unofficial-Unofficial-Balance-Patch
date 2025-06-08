@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "RazorsharpEdge",
+      "effects": [
+        {
+          "id": "@UUBP_15AttackMinus3HealthToUnit"
+        }
+      ],
+      "descriptions": {
+        "english": "Apply +[effect0.upgrade.bonusdamage][attack] and [effect0.upgrade.bonushp][health]."
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_15AttackMinus3HealthToUnit",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_upgrade": "@UUBP_15AttackMinus3Health"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UUBP_15AttackMinus3Health",
+      "bonus_damage": 15,
+      "bonus_hp": -3
+    }
+  ]
+}
