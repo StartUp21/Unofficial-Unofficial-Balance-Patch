@@ -5,7 +5,7 @@
       "override": true,
       "id": "StarterDamageForMorsel",
       "descriptions": {
-        "english": "Deal 4 damage to a random enemy unit."
+        "english": "Deal [effect0.power] damage to a random enemy unit."
       },
       "cost": 0,
       "effects": [
