@@ -20,14 +20,5 @@
       "id": "UUBP_Explosive",
       "name": "CardTraitDamageOverflow"
     }
-  ],
-  "room_modifiers": [
-    {
-      "id": "UUBP_NothingRoom",
-      "name": "RoomStateNothingModifier",
-      "descriptions": {
-        "english": ""
-      }
-    }
   ]
 }

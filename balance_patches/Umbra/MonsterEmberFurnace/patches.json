@@ -10,6 +10,7 @@
       "descriptions": {
         "english": "Gain [effect0.power][ember]."
       },
+      "class": "ClassUmbra",
       "is_an_ability": true,
       "cooldown": 1,
       "targetless": true,

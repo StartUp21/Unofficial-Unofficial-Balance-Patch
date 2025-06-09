@@ -52,6 +52,7 @@
 			"descriptions": {
 				"english": "Gain <b>Rage 5</b>."
 			},
+			"class": "ClassHellhorned",
 			"is_an_ability": true,
 			"cooldown": 1,
 			"effects": [
@@ -72,6 +73,7 @@
 			"descriptions": {
 				"english": "Gain <b>Rage 8</b>. Gain <b>Trample</b> until the end of combat."
 			},
+			"class": "ClassHellhorned",
 			"is_an_ability": true,
 			"cooldown": 1,
 			"effects": [
@@ -95,6 +97,7 @@
 			"descriptions": {
 				"english": "Gain <b>Rage 13</b>. Gain <b>Trample</b> until the end of combat."
 			},
+			"class": "ClassHellhorned",
 			"is_an_ability": true,
 			"cooldown": 1,
 			"effects": [

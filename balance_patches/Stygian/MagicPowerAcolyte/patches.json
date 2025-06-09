@@ -18,6 +18,7 @@
       "descriptions": {
         "english": "Add an <b>Offering Token</b> spell with [ephemeral] to your hand."
       },
+      "class": "ClassStygian",
       "is_an_ability": true,
       "cooldown": 2,
       "targetless": true,

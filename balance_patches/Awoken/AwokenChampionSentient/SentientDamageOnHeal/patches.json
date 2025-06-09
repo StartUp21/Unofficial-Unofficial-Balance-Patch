@@ -10,6 +10,7 @@
       "descriptions": {
         "english": "Restore [effect0.power] health."
       },
+      "class": "ClassAwoken",
       "is_an_ability": true,
       "cooldown": 2,
       "targetless": true,
@@ -28,6 +29,7 @@
       "descriptions": {
         "english": "Restore [effect0.power] health, twice."
       },
+      "class": "ClassAwoken",
       "is_an_ability": true,
       "cooldown": 2,
       "targetless": true,
@@ -49,6 +51,7 @@
       "descriptions": {
         "english": "Restore [effect0.power] health, thrice."
       },
+      "class": "ClassAwoken",
       "is_an_ability": true,
       "cooldown": 2,
       "targetless": true,

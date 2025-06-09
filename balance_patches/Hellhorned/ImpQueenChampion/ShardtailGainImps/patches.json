@@ -107,11 +107,7 @@
 					"id": "@UUBP_ShardtailGainImps"
 				}
 			],
-			"room_modifier_upgrades": [
-				{
-					"id": "@UUBP_NothingRoom"
-				}
-			]
+			"room_modifier_upgrades": null
 		},
 		{
 			"override": true,
