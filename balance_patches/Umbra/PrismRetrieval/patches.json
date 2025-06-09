@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "PrismRetrieval",
+      "descriptions": {
+        "english": "Draw a unit. Apply <nobr>[effect0.upgrade.status0.power][x] [damageshield]</nobr> and <nobr>-[x][ember]</nobr>."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_AddDamageShieldAndCheapensNextDrawnUnit"
+        },
+        {
+
+          "id": "@UUBP_DrawUnit"
+        }
+      ],
+      "traits": [
+        "@UUBP_Consume",
+        "@UUBP_Deployable",
+        "@UUBP_ScaleTempUpgradeByPlayedCost",
+        "@UUBP_ShowNumberOfCardTargets"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_AddDamageShieldAndCheapensNextDrawnUnit",
+      "name": "CardEffectAddTempCardUpgradeToNextDrawnCard",
+      "param_upgrade": "@UUBP_DamageShieldAndCheapens",
+      "param_int": 0
+    },
+    {
+      "id": "UUBP_DrawUnit",
+      "name": "CardEffectDrawType",
+      "param_int": 1,
+      "target_card_type": "monster",
+      "target_card_selection_mode": "random_to_hand"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UUBP_DamageShieldAndCheapens",
+      "cost_reduction": 1,
+      "status_effect_upgrades": [
+        {
+          "status": "damage shield",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "UUBP_Deployable",
+      "name": "CardTraitDrawInDeploymentPhase",
+      "draw_in_deployment_phase": true
+    },
+    {
+      "id": "UUBP_Consume",
+      "name": "CardTraitExhaustState"
+    },
+    {
+      "id": "UUBP_ScaleTempUpgradeByPlayedCost",
+      "name": "CardTraitScalingTempCardUpgradeToCard",
+      "param_int": 1,
+      "param_tracked_value": "played_cost",
+      "param_entry_duration": "this_turn",
+      "param_card_type": "any"
+    },
+    {
+      "id": "UUBP_ShowNumberOfCardTargets",
+      "name": "CardTraitShowCardTargets"
+    }
+  ]
+}
