@@ -1,0 +1,101 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "UUBP_PenumbraStatsOnEatAbility",
+      "names": {
+        "english": "Voracity"
+      },
+      "descriptions": {
+        "english": "Feed on units with [eaten]."
+      },
+      "class": "ClassUmbra",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "effects": [
+        {
+          "id": "@UUBP_SelfFeedRoom"
+        }
+      ],
+      "targetless": true
+    },
+    {
+      "id": "UUBP_PenumbraStatsOnEatAbility2",
+      "names": {
+        "english": "Voracity II"
+      },
+      "descriptions": {
+        "english": "Feed on units with [eaten], twice."
+      },
+      "class": "ClassUmbra",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "traits": [
+        {
+          "id": "@UUBP_ScalingFeederRules2"
+        }
+      ],
+      "effects": [
+        {
+          "id": "@UUBP_SelfFeedRoom"
+        }
+      ],
+      "targetless": true
+    },
+    {
+      "id": "UUBP_PenumbraStatsOnEatAbility3",
+      "names": {
+        "english": "Voracity III"
+      },
+      "descriptions": {
+        "english": "Feed on units with [eaten] on all floors, twice."
+      },
+      "class": "ClassUmbra",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "traits": [
+        {
+          "id": "@UUBP_ScalingFeederRules2"
+        }
+      ],
+      "effects": [
+        {
+          "id": "@UUBP_SelfFeedTower"
+        }
+      ],
+      "targetless": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_SelfFeedRoom",
+      "name": "CardEffectFeederRules",
+      "param_bool": true,
+      "target_team": "monsters",
+      "target_mode": "room"
+    },
+    {
+      "id": "UUBP_SelfFeedTower",
+      "name": "CardEffectAbilityUserFeederRules",
+      "target_team": "monsters",
+      "target_mode": "tower"
+    }
+  ],
+  "upgrades": [
+    {
+      "override": true,
+      "id": "PenumbraStatsOnEat",
+      "ability_upgrade": "@UUBP_PenumbraStatsOnEatAbility"
+    },
+    {
+      "override": true,
+      "id": "PenumbraStatsOnEat2",
+      "ability_upgrade": "@UUBP_PenumbraStatsOnEatAbility2"
+    },
+    {
+      "override": true,
+      "id": "PenumbraStatsOnEat3",
+      "ability_upgrade": "@UUBP_PenumbraStatsOnEatAbility3"
+    }
+  ]
+}

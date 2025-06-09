@@ -19,6 +19,13 @@
     {
       "id": "UUBP_Explosive",
       "name": "CardTraitDamageOverflow"
+    },
+    {
+      "id": "UUBP_ScalingFeederRules2",
+      "name": "CardTraitScalingFeederRules",
+      "param_float": 1,
+      "param_int": 2,
+      "param_tracked_value": "const_one"
     }
   ]
 }

@@ -3,14 +3,13 @@
   "cards": [
     {
       "id": "UUBP_LightUpFurnace",
-      "card_art_reference": "",
       "names": {
         "english": "Light Up"
       },
       "descriptions": {
         "english": "Gain [effect0.power][ember]."
       },
-      "ability": true,
+      "is_an_ability": true,
       "cooldown": 1,
       "targetless": true,
       "effects": [
@@ -44,10 +43,7 @@
           "count": 1
         }
       ],
-      "ability": "@UUBP_LightUpFurnace",
-      "subtypes": [
-        "SubtypesData_Automaton"
-      ]
+      "ability": "@UUBP_LightUpFurnace"
     }
   ],
   "effects": [

@@ -6,6 +6,7 @@ using System.Text;
 
 namespace Unofficial_Unofficial_Balance_Patch.CardEffects
 {
+
 	public sealed class CardEffectTransferStatsFromUnit : CardEffectBase
 	{
 		public override PropDescriptions CreateEditorInspectorDescriptions()
