@@ -85,17 +85,6 @@
 			"param_card_pool": "@UUBP_ImpPool"
 		}
 	],
-	"room_modifiers": [
-		{
-			"id": "UUBP_ShardtailGainImps",
-			"name": "RoomStateUnitCostModifier",
-			"descriptions": {
-				"english": "Imp units cost [power][ember] on this floor."
-			},
-			"param_subtype": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
-			"param_int": -1
-		}
-	],
 	"upgrades": [
 		{
 			"override": true,

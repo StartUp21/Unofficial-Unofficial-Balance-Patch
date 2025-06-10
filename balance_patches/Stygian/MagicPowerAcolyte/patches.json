@@ -11,7 +11,6 @@
   "cards": [
     {
       "id": "UUBP_AddOfferingToken",
-      "card_art": "",
       "names": {
         "english": "Abyssal Chant"
       },
@@ -39,10 +38,7 @@
           "count": 8
         }
       ],
-      "ability": "@UUBP_AddOfferingToken",
-      "subtypes": [
-        "SubtypesData_Mage"
-      ]
+      "ability": "@UUBP_AddOfferingToken"
     }
   ],
   "effects": [
@@ -52,7 +48,7 @@
       "param_int": 3,
       "param_int_2": 1,
       "param_card_pool": "@UUBP_OfferingPool",
-      "param_upgrade": "LunarPriestess_Upgrade"
+      "param_upgrade": "@LunarPriestess_Upgrade"
     }
   ]
 }
