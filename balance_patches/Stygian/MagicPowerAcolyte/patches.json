@@ -48,7 +48,7 @@
       "param_int": 3,
       "param_int_2": 1,
       "param_card_pool": "@UUBP_OfferingPool",
-      "param_upgrade": "@LunarPriestess_Upgrade"
+      "param_upgrade": "LunarPriestess_Upgrade"
     }
   ]
 }
