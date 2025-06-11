@@ -136,22 +136,12 @@
     {
       "override": true,
       "id": "SentientDamageOnHeal",
-      "ability_upgrade": "@UUBP_SentientDamageOnHealAbility",
-      "trait_upgrades": [
-        {
-          "id": "@UUBP_Explosive"
-        }
-      ]
+      "ability_upgrade": "@UUBP_SentientDamageOnHealAbility"
     },
     {
       "override": true,
       "id": "SentientDamageOnHeal2",
-      "ability_upgrade": "@UUBP_SentientDamageOnHealAbility2",
-      "trait_upgrades": [
-        {
-          "id": "@UUBP_Explosive"
-        }
-      ]
+      "ability_upgrade": "@UUBP_SentientDamageOnHealAbility2"
     },
     {
       "override": true,

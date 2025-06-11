@@ -11,36 +11,48 @@
       ]
     }
   ],
+  "characters": [
+    {
+      "override": true,
+      "id": "Shadowsiege",
+      "starting_status_effects": [
+        {
+          "status": "trample",
+          "count": 1
+        }
+      ]
+    }
+  ],
   "card_triggers": [
     {
       "id": "UUBP_Shadowsiege",
       "trigger": "on_unplayed_negative",
       "descriptions": {
-        "english": "Apply [emberdrain] [effect0.upgrade0.status0.power] and -[effect0.upgrade0.costreductionabs][ember]."
+        "english": "Apply [emberdrain] [effect0.upgrade.status0.power] and -[effect0.upgrade.costreductionabs][ember]."
       },
       "effects": [
         {
-          "id": "@UUBP_TradeCostDownEmberdrain2"
+          "id": "@UUBP_TradeCostDownEmberdrain1"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "UUBP_TradeCostDownEmberdrain2",
+      "id": "UUBP_TradeCostDownEmberdrain1",
       "name": "CardEffectAddTempUpgradeToCurrentCard",
       "target_mode": "self",
-      "param_upgrade": "@UUBP_TradeCostDownEmberdrain2"
+      "param_upgrade": "@UUBP_TradeCostDownEmberdrain1"
     }
   ],
   "upgrades": [
     {
-      "id": "UUBP_TradeCostDownEmberdrain2",
+      "id": "UUBP_TradeCostDownEmberdrain1",
       "cost_reduction": 2,
       "status_effect_upgrades": [
         {
           "status": "scorch",
-          "count": 2
+          "count": 1
         }
       ]
     }

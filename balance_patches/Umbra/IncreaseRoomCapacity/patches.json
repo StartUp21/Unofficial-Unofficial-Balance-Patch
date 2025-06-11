@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "override": true,
+      "id": "IncreaseRoomCapacity",
+      "card_type": "room",
+      "effects": [
+        {
+          "id": "@UUBP_Plus3CapacityRoom"
+        }
+      ],
+      "traits": [
+        "@UUBP_Deployable"
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool"
+      ],
+      "descriptions": {
+        "english": "+[effect0.upgrade.roommodifier0.power][capacity]."
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_Plus3CapacityRoom",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "param_upgrade": "@UUBP_Plus3CapacityRoom"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UUBP_Plus3CapacityRoom",
+      "room_modifier_upgrades": [
+        {
+          "id": "@UUBP_Plus3Capacity"
+        }
+      ],
+      "hide_icon_on_card": true,
+      "icon": "@UUBP_CrucibleIcon"
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "UUBP_Plus3Capacity",
+      "name": "RoomStateCapacityModifier",
+      "param_int": 3
+    }
+  ],
+  "sprites": [
+    {
+      "id": "UUBP_CrucibleIcon",
+      "path": "textures/CrucibleIcon.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "UUBP_CrucibleIcon",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@UUBP_CrucibleIcon"
+        }
+      }
+    }
+  ]
+}
