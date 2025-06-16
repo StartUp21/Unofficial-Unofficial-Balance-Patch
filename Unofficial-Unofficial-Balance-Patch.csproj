@@ -40,6 +40,7 @@
   <ItemGroup>
     <Folder Include="balance_patches\Hellhorned\StarterTorch\" />
     <Folder Include="balance_patches\Umbra\StarterDamageForMorsel\" />
+    <Folder Include="balance_patches\Underlegion\UnderlegionChamp1\Underlegion1RegenOnHarvest\" />
   </ItemGroup>
 
 </Project>

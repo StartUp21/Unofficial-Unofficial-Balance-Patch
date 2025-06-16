@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "room_modifiers": [
+    {
+      "id": "UUBP_Underlegion1RegenOnHarvestRoom1",
+      "name": "RoomStateTroopUnitUpgradeModifier",
+      "descriptions": {
+        "english": "Grant [multistrike] [status0.power] to [funguy]. [troop] adds +[upgrade.bonushp][health] per stack."
+      },
+      "param_subtype": "SubtypesData_FunGuy",
+      "param_upgrade": "@UUBP_Underlegion1RegenOnHarvestRoom1",
+      "param_status_effects": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_Underlegion1RegenOnHarvestRoom2",
+      "name": "RoomStateTroopUnitUpgradeModifier",
+      "descriptions": {
+        "english": "Grant [multistrike] [status0.power] to [funguy]. [troop] adds +[upgrade.bonusdamage][attack] and +[upgrade.bonushp][health] per stack."
+      },
+      "param_subtype": "SubtypesData_FunGuy",
+      "param_upgrade": "@UUBP_Underlegion1RegenOnHarvestRoom2",
+      "param_status_effects": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_Underlegion1RegenOnHarvestRoom3",
+      "name": "RoomStateTroopUnitUpgradeModifier",
+      "descriptions": {
+        "english": "Grant [multistrike] [status0.power] to [funguy]. [troop] adds +[upgrade.bonusdamage][attack] and +[upgrade.bonushp][health] per stack."
+      },
+      "param_subtype": "SubtypesData_FunGuy",
+      "param_upgrade": "@UUBP_Underlegion1RegenOnHarvestRoom3",
+      "param_status_effects": [
+        {
+          "status": "multistrike",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UUBP_Underlegion1RegenOnHarvestRoom1",
+      "bonus_hp": 2
+    },
+    {
+      "id": "UUBP_Underlegion1RegenOnHarvestRoom2",
+      "bonus_damage": 2,
+      "bonus_hp": 2
+    },
+    {
+      "id": "UUBP_Underlegion1RegenOnHarvestRoom3",
+      "bonus_damage": 2,
+      "bonus_hp": 4
+    },
+    {
+      "override": true,
+      "id": "Underlegion1RegenOnHarvest1",
+      "titles": {
+        "english": "Commander"
+      },
+      "bonus_damage": 10,
+      "bonus_hp": 10,
+      "trigger_upgrades": null,
+      "room_modifier_upgrades": [
+        {
+          "id": "@UUBP_Underlegion1RegenOnHarvestRoom1"
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "Underlegion1RegenOnHarvest2",
+      "titles": {
+        "english": "Commander II"
+      },
+      "bonus_damage": 20,
+      "bonus_hp": 20,
+      "trigger_upgrades": null,
+      "room_modifier_upgrades": [
+        {
+          "id": "@UUBP_Underlegion1RegenOnHarvestRoom2"
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "Underlegion1RegenOnHarvest3",
+      "titles": {
+        "english": "Commander III"
+      },
+      "bonus_damage": 30,
+      "bonus_hp": 30,
+      "trigger_upgrades": null,
+      "room_modifier_upgrades": [
+        {
+          "id": "@UUBP_Underlegion1RegenOnHarvestRoom3"
+        }
+      ]
+    }
+  ]
+}
