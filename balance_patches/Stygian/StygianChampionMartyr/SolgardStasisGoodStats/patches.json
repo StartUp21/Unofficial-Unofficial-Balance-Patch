@@ -1,0 +1,237 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+
+  "effects": [
+    {
+      "id": "UUBP_IncantShard1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "stygian_blessing",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_RemoveStasisOnShard4",
+      "name": "CardEffectRemoveStatusEffectOnStatusThreshold",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "stygian_blessing",
+          "count": 4
+        },
+        {
+          "status": "untouchable",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_BecomeBigOnShard4",
+      "name": "CardEffectAddTempUpgradeOnStatusThreshold",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "stygian_blessing",
+          "count": 4
+        }
+      ],
+      "param_upgrade": "@UUBP_BecomeBig1"
+    },
+    {
+      "id": "UUBP_RemoveStasisOnShard8",
+      "name": "CardEffectRemoveStatusEffectOnStatusThreshold",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "stygian_blessing",
+          "count": 8
+        },
+        {
+          "status": "untouchable",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_BecomeBigOnShard8",
+      "name": "CardEffectAddTempUpgradeOnStatusThreshold",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "stygian_blessing",
+          "count": 8
+        }
+      ],
+      "param_upgrade": "@UUBP_BecomeBig2"
+    },
+    {
+      "id": "UUBP_RemoveStasisOnShard16",
+      "name": "CardEffectRemoveStatusEffectOnStatusThreshold",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "stygian_blessing",
+          "count": 16
+        },
+        {
+          "status": "untouchable",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "UUBP_BecomeBigOnShard16",
+      "name": "CardEffectAddTempUpgradeOnStatusThreshold",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "stygian_blessing",
+          "count": 16
+        }
+      ],
+      "param_upgrade": "@UUBP_BecomeBig3"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "UUBP_SolgardBecomeBigOnShard4",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain [stygianblessing] [effect0.status0.power].<br>At [stygianblessing] [effect1.status0.power], remove [stasis], gain +[effect2.upgrade.bonussize][capacity], +[effect2.upgrade.bonusdamage][attack], and +[effect2.upgrade.bonushp][health]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_IncantShard1"
+        },
+        {
+          "id": "@UUBP_RemoveStasisOnShard4"
+        },
+        {
+          "id": "@UUBP_BecomeBigOnShard4"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SolgardBecomeBigOnShard8",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain [stygianblessing] [effect0.status0.power].<br>At [stygianblessing] [effect1.status0.power], remove [stasis], gain +[effect2.upgrade.bonussize][capacity], +[effect2.upgrade.bonusdamage][attack], and +[effect2.upgrade.bonushp][health]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_IncantShard1"
+        },
+        {
+          "id": "@UUBP_RemoveStasisOnShard8"
+        },
+        {
+          "id": "@UUBP_BecomeBigOnShard8"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_SolgardBecomeBigOnShard16",
+      "trigger": "card_spell_played",
+      "descriptions": {
+        "english": "Gain [stygianblessing] [effect0.status0.power].<br>At [stygianblessing] [effect1.status0.power], remove [stasis], gain +[effect2.upgrade.bonussize][capacity], +[effect2.upgrade.bonusdamage][attack], and +[effect2.upgrade.bonushp][health]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_IncantShard1"
+        },
+        {
+          "id": "@UUBP_RemoveStasisOnShard16"
+        },
+        {
+          "id": "@UUBP_BecomeBigOnShard16"
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "override": true,
+      "id": "SolgardStasisGoodStats",
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_SolgardBecomeBigOnShard4"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "untouchable",
+          "count": 1
+        },
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ],
+      "bonus_damage": 0,
+      "bonus_hp": 0
+    },
+    {
+      "override": true,
+      "id": "SolgardStasisGoodStats2",
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_SolgardBecomeBigOnShard8"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "untouchable",
+          "count": 1
+        },
+        {
+          "status": "multistrike",
+          "count": 3
+        }
+      ],
+      "bonus_damage": 0,
+      "bonus_hp": 0
+    },
+    {
+      "override": true,
+      "id": "SolgardStasisGoodStats3",
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_SolgardBecomeBigOnShard16"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "untouchable",
+          "count": 1
+        },
+        {
+          "status": "multistrike",
+          "count": 7
+        }
+      ],
+      "bonus_damage": 0,
+      "bonus_hp": 0
+    },
+    {
+      "id": "UUBP_BecomeBig1",
+      "bonus_damage": 30,
+      "bonus_hp": 55,
+      "bonus_size": 1
+    },
+    {
+      "id": "UUBP_BecomeBig2",
+      "bonus_damage": 35,
+      "bonus_hp": 115,
+      "bonus_size": 2
+    },
+    {
+      "id": "UUBP_BecomeBig3",
+      "bonus_damage": 40,
+      "bonus_hp": 245,
+      "bonus_size": 3
+    }
+  ]
+}
