@@ -1,5 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "additional_tooltips": [
+    {
+      "id": "UUBP_Horde",
+      "status": "horde"
+    }
+  ],
   "traits": [
     {
       "id": "UUBP_Permafrost",

@@ -1,0 +1,151 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "character_triggers": [
+    {
+      "id": "UUBP_Underlegion1FunguyOnSlay1Slay",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Friendly units [propagate] [effect0.power]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_AlliesPropagate1"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_Underlegion1FunguyOnSlay2Slay",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Friendly units [propagate] [effect0.power]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_AlliesPropagate2"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_Underlegion1FunguyOnSlay3Slay",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Friendly units [propagate] [effect0.power]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_AlliesPropagate3"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_Underlegion1FunguyOnSlay3Harvest",
+      "trigger": "on_any_unit_death_on_floor",
+      "descriptions": {
+        "english": "[propagate] [effect0.power]."
+      },
+      "effects": [
+        {
+          "id": "@UUBP_SelfPropagate1"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_SelfPropagate1",
+      "name": "CardEffectAdjustAllStatusEffects",
+      "param_int": 1,
+      "param_int_2": 1,
+      "target_mode": "self"
+    },
+    {
+      "id": "UUBP_AlliesPropagate1",
+      "name": "CardEffectAdjustAllStatusEffects",
+      "param_int": 1,
+      "param_int_2": 1,
+      "target_team": "monsters"
+    },
+    {
+      "id": "UUBP_AlliesPropagate2",
+      "name": "CardEffectAdjustAllStatusEffects",
+      "param_int": 2,
+      "param_int_2": 1,
+      "target_team": "monsters"
+    },
+    {
+      "id": "UUBP_AlliesPropagate3",
+      "name": "CardEffectAdjustAllStatusEffects",
+      "param_int": 3,
+      "param_int_2": 1,
+      "target_team": "monsters"
+    }
+  ],
+  "upgrades": [
+    {
+      "override": true,
+      "id": "Underlegion1FunguyOnSlay",
+      "bonus_damage": 15,
+      "bonus_hp": 5,
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_Underlegion1FunguyOnSlay1Slay"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "trample",
+          "count": 1
+        },
+        {
+          "status": "buff",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "Underlegion1FunguyOnSlay2",
+      "bonus_damage": 35,
+      "bonus_hp": 10,
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_Underlegion1FunguyOnSlay2Slay"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "trample",
+          "count": 1
+        },
+        {
+          "status": "buff",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "Underlegion1FunguyOnSlay3",
+      "bonus_damage": 75,
+      "bonus_hp": 15,
+      "trigger_upgrades": [
+        {
+          "id": "@UUBP_Underlegion1FunguyOnSlay3Slay"
+        },
+        {
+          "id": "@UUBP_Underlegion1FunguyOnSlay3Harvest"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "trample",
+          "count": 1
+        },
+        {
+          "status": "buff",
+          "count": 15
+        }
+      ]
+    }
+  ]
+}

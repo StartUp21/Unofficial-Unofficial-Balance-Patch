@@ -14,7 +14,8 @@
           "status": "multistrike",
           "count": 1
         }
-      ]
+      ],
+      "additional_tooltips": [ "@UUBP_horde" ]
     },
     {
       "id": "UUBP_Underlegion1RegenOnHarvestRoom2",
@@ -29,7 +30,8 @@
           "status": "multistrike",
           "count": 1
         }
-      ]
+      ],
+      "additional_tooltips": [ "@UUBP_horde" ]
     },
     {
       "id": "UUBP_Underlegion1RegenOnHarvestRoom3",
@@ -44,7 +46,8 @@
           "status": "multistrike",
           "count": 2
         }
-      ]
+      ],
+      "additional_tooltips": [ "@UUBP_horde" ]
     }
   ],
   "upgrades": [
