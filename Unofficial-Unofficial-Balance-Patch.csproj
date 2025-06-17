@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="balance_patches\Underlegion\UnderlegionChamp1\Underlegion1FunguyOnSlay\patches.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="balance_patches\Underlegion\UnderlegionChamp1\Underlegion1FunguyOnSlay\patches.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\MonsterTrain2\profiles\Default\BepInEx\core\0Harmony.dll</HintPath>
       <Private>True</Private>
@@ -48,6 +40,7 @@
   <ItemGroup>
     <Folder Include="balance_patches\Hellhorned\StarterTorch\" />
     <Folder Include="balance_patches\Umbra\StarterDamageForMorsel\" />
+    <Folder Include="balance_patches\Underlegion\UnderlegionChamp1\Underlegion1FunguyOnSlay\" />
     <Folder Include="balance_patches\Underlegion\UnderlegionChamp1\Underlegion1RegenOnHarvest\" />
   </ItemGroup>
 
