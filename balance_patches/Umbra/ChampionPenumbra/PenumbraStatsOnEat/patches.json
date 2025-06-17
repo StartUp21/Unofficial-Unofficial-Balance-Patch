@@ -7,11 +7,16 @@
         "english": "Voracity"
       },
       "descriptions": {
-        "english": "Feed on units with [eaten]."
+        "english": "Feed on units with [eaten], twice."
       },
       "class": "ClassUmbra",
       "is_an_ability": true,
       "cooldown": 3,
+      "traits": [
+        {
+          "id": "@UUBP_ScalingFeederRules2"
+        }
+      ],
       "effects": [
         {
           "id": "@UUBP_SelfFeedRoom"
@@ -29,7 +34,7 @@
       },
       "class": "ClassUmbra",
       "is_an_ability": true,
-      "cooldown": 3,
+      "cooldown": 2,
       "traits": [
         {
           "id": "@UUBP_ScalingFeederRules2"
@@ -52,7 +57,7 @@
       },
       "class": "ClassUmbra",
       "is_an_ability": true,
-      "cooldown": 3,
+      "cooldown": 2,
       "traits": [
         {
           "id": "@UUBP_ScalingFeederRules2"

@@ -31,7 +31,7 @@
       "name": "CardTraitScalingFeederRules",
       "param_float": 1,
       "param_int": 2,
-      "param_tracked_value": "const_one"
+      "param_tracked_value": "any_character"
     }
   ]
 }
