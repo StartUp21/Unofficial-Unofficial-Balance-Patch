@@ -50,28 +50,5 @@
         }
       ]
     }
-  ],
-  "traits": [
-    {
-      "id": "UUBP_Deployable",
-      "name": "CardTraitDrawInDeploymentPhase",
-      "draw_in_deployment_phase": true
-    },
-    {
-      "id": "UUBP_Consume",
-      "name": "CardTraitExhaustState"
-    },
-    {
-      "id": "UUBP_ScaleTempUpgradeByPlayedCost",
-      "name": "CardTraitScalingTempCardUpgradeToCard",
-      "param_int": 1,
-      "param_tracked_value": "played_cost",
-      "param_entry_duration": "this_turn",
-      "param_card_type": "any"
-    },
-    {
-      "id": "UUBP_ShowNumberOfCardTargets",
-      "name": "CardTraitShowCardTargets"
-    }
   ]
 }

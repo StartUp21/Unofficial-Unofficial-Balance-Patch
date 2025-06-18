@@ -32,6 +32,39 @@
       "param_float": 1,
       "param_int": 2,
       "param_tracked_value": "any_character"
+    },
+    {
+      "id": "UUBP_Deployable",
+      "name": "CardTraitDrawInDeploymentPhase",
+      "draw_in_deployment_phase": true
+    },
+    {
+      "id": "UUBP_Consume",
+      "name": "CardTraitExhaustState"
+    },
+    {
+      "id": "UUBP_ScaleTempUpgradeByPlayedCost",
+      "name": "CardTraitScalingTempCardUpgradeToCard",
+      "param_int": 1,
+      "param_tracked_value": "played_cost",
+      "param_entry_duration": "this_turn",
+      "param_card_type": "any"
+    },
+    {
+      "id": "UUBP_ShowNumberOfCardTargets",
+      "name": "CardTraitShowCardTargets"
+    },
+    {
+      "id": "UUBP_Offering",
+      "name": "CardTraitTreasure"
+    }
+  ],
+  "replacement_texts": [
+    {
+      "key": "",
+      "texts": {
+        "english": "A <b>Frozen</b> card cannot be discarded in any way. <b>Frozen</b> is removed when the card is played."
+      }
     }
   ]
 }

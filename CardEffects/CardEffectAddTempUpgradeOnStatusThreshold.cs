@@ -18,12 +18,13 @@ namespace Unofficial_Unofficial_Balance_Patch.CardEffects
 
         protected override void CollectTargetsForUpgrade(CardEffectState cardEffectState, CardEffectParams cardEffectParams, List<CharacterState> upgradeTargets, ICoreGameManagers coreGameManagers)
         {
+            //Make fucking sure the upgrade is unique please
             upgradeTargets.Clear();
             foreach (CharacterState characterState in cardEffectParams.targets)
             {
                 if (this.statusRequirement != null && this.upgrade != null)
                 {
-                    if (characterState.GetStatusEffectStacks(this.statusRequirement.statusId) == this.statusRequirement.count)
+                    if (characterState.GetStatusEffectStacks(this.statusRequirement.statusId) >= this.statusRequirement.count)
                     {
                         upgradeTargets.Add(characterState);
                     }

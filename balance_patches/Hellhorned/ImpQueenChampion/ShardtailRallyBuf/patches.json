@@ -196,7 +196,8 @@
           "status": "trample",
           "count": 1
         }
-      ]
+      ],
+      "is_unique": true
     }
   ]
 }

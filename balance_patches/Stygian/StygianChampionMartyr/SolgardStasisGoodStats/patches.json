@@ -219,19 +219,22 @@
       "id": "UUBP_BecomeBig1",
       "bonus_damage": 30,
       "bonus_hp": 55,
-      "bonus_size": 1
+      "bonus_size": 1,
+      "is_unique": true
     },
     {
       "id": "UUBP_BecomeBig2",
       "bonus_damage": 35,
       "bonus_hp": 115,
-      "bonus_size": 2
+      "bonus_size": 2,
+      "is_unique": true
     },
     {
       "id": "UUBP_BecomeBig3",
       "bonus_damage": 40,
       "bonus_hp": 245,
-      "bonus_size": 3
+      "bonus_size": 3,
+      "is_unique": true
     }
   ]
 }
