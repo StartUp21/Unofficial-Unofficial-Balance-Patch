@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "UUBP_FreezeCardInHand",
+      "names": {
+        "english": "Freezing Chant"
+      },
+      "descriptions": {
+        "english": "Apply <b>Frozen</b> to a card in your hand."
+      },
+      "class": "ClassStygian",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "effects": [
+        {
+          "id": "@UUBP_ApplyFrozenToCardInHand"
+        }
+      ]
+    },
+    {
+      "override": true,
+      "id": "HoardAcolyte",
+      "cost": 1
+    }
+  ],
+  "characters": [
+    {
+      "override": true,
+      "id": "MonsterHoardTotem",
+      "starting_status_effects": [
+        {
+          "status": "conduit",
+          "count": 8
+        }
+      ],
+      "ability": "@UUBP_FreezeCardInHand",
+      "triggers": null
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_ApplyFrozenToCardInHand",
+      "name": "CardEffectFreezeCard"
+    }
+  ]
+}

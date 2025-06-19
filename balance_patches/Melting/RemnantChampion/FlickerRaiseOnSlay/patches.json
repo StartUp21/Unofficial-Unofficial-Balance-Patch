@@ -1,0 +1,162 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "UUBP_RectorRaise1",
+      "card_art": "",
+      "names": {
+        "english": "Dark Call"
+      },
+      "descriptions": {
+        "english": "[raise] [effect0.power] random units and apply [rage] [effect0.upgrade.status1.power]."
+      },
+      "is_an_ability": true,
+      "cooldown": 1,
+      "targetless": true,
+      "effects": [
+        {
+          "id": "@UUBP_RectorRaise1"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_RectorRaise2",
+      "card_art": "",
+      "names": {
+        "english": "Dark Call II"
+      },
+      "descriptions": {
+        "english": "[raise] [effect0.power] random units and apply [rage] [effect0.upgrade.status1.power]."
+      },
+      "is_an_ability": true,
+      "cooldown": 1,
+      "targetless": true,
+      "effects": [
+        {
+          "id": "@UUBP_RectorRaise2"
+        }
+      ]
+    },
+    {
+      "id": "UUBP_RectorRaise3",
+      "card_art": "",
+      "names": {
+        "english": "Dark Call III"
+      },
+      "descriptions": {
+        "english": "[raise] [effect0.power] random units and apply [rage] [effect0.upgrade.status1.power]."
+      },
+      "is_an_ability": true,
+      "cooldown": 1,
+      "targetless": true,
+      "effects": [
+        {
+          "id": "@UUBP_RectorRaise3"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UUBP_RectorRaise1",
+      "name": "CardEffectRecursion",
+      "param_int": 2,
+      "param_upgrade": "@UUBP_RectorRaiseUpgrade1",
+      "target_mode": "exhaust",
+      "target_card_type": "monster",
+      "target_card_selection_mode": "random_to_hand"
+    },
+    {
+      "id": "UUBP_RectorRaise2",
+      "name": "CardEffectRecursion",
+      "param_int": 2,
+      "param_upgrade": "@UUBP_RectorRaiseUpgrade2",
+      "target_mode": "exhaust",
+      "target_card_type": "monster",
+      "target_card_selection_mode": "random_to_hand"
+    },
+    {
+      "id": "UUBP_RectorRaise3",
+      "name": "CardEffectRecursion",
+      "param_int": 2,
+      "param_upgrade": "@UUBP_RectorRaiseUpgrade3",
+      "target_mode": "exhaust",
+      "target_card_type": "monster",
+      "target_card_selection_mode": "random_to_hand"
+    }
+  ],
+  "upgrades": [
+    {
+      "override": true,
+      "id": "FlickerRaiseOnSlay",
+      "bonus_damage": 10,
+      "bonus_hp": 10,
+      "ability_upgrade": "@UUBP_RectorRaise1",
+      "trigger_upgrades": null
+    },
+    {
+      "override": true,
+      "id": "FlickerRaiseOnSlay2",
+      "bonus_damage": 20,
+      "bonus_hp": 20,
+      "ability_upgrade": "@UUBP_RectorRaise2",
+      "trigger_upgrades": null
+    },
+    {
+      "override": true,
+      "id": "FlickerRaiseOnSlay3",
+      "bonus_damage": 35,
+      "bonus_hp": 35,
+      "ability_upgrade": "@UUBP_RectorRaise3",
+      "trigger_upgrades": null
+    },
+    {
+      "id": "UUBP_RectorRaiseUpgrade1",
+      "cost_reduction": 99,
+      "status_effect_upgrades": [
+        {
+          "status": "ephemeral",
+          "count": 1
+        },
+        {
+          "status": "buff",
+          "count": 5
+        }
+      ],
+      "bonus_damage": 5,
+      "bonus_hp": 5
+    },
+    {
+      "id": "UUBP_RectorRaiseUpgrade2",
+      "cost_reduction": 99,
+      "status_effect_upgrades": [
+        {
+          "status": "ephemeral",
+          "count": 1
+        },
+        {
+          "status": "buff",
+          "count": 8
+        }
+      ],
+      "bonus_damage": 5,
+      "bonus_hp": 5
+    },
+    {
+      "id": "UUBP_RectorRaiseUpgrade3",
+      "cost_reduction": 99,
+      "status_effect_upgrades": [
+        {
+          "status": "ephemeral",
+          "count": 1
+        },
+        {
+          "status": "buff",
+          "count": 14
+        }
+      ],
+      "bonus_damage": 5,
+      "bonus_hp": 5
+    }
+  ]
+}

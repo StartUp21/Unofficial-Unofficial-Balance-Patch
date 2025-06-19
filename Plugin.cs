@@ -38,6 +38,10 @@ namespace Unofficial_Unofficial_Balance_Patch
 			{
                 harmony.Patch(original: typeof(CardManager).GetMethod("DiscardCard", AccessTools.all),
                         prefix: new HarmonyMethod(typeof(HarmonyPatches).GetMethod("CardManager_DiscardCard_Prefix")));
+                harmony.Patch(original: typeof(CardEffectChooseDiscard).GetMethod("CardFilterFunc", AccessTools.all),
+                        postfix: new HarmonyMethod(typeof(HarmonyPatches).GetMethod("CardEffectChooseDiscard_CardFilterFunc_Postfix")));
+                //harmony.Patch(original: typeof(CardEffectRandomDiscard).GetMethod("ApplyEffect", AccessTools.all),
+                //        prefix: new HarmonyMethod(typeof(HarmonyPatches).GetMethod("CardEffectRandomDiscard_ApplyEffect_Prefix")));
             }
             catch (Exception ex)
             {
