@@ -5,7 +5,7 @@
       "id": "UUBP_RectorRaise1",
       "card_art": "",
       "names": {
-        "english": "Dark Call"
+        "english": "Seance"
       },
       "descriptions": {
         "english": "[raise] [effect0.power] random units and apply [rage] [effect0.upgrade.status1.power]."
@@ -23,7 +23,7 @@
       "id": "UUBP_RectorRaise2",
       "card_art": "",
       "names": {
-        "english": "Dark Call II"
+        "english": "Seance II"
       },
       "descriptions": {
         "english": "[raise] [effect0.power] random units and apply [rage] [effect0.upgrade.status1.power]."
@@ -41,7 +41,7 @@
       "id": "UUBP_RectorRaise3",
       "card_art": "",
       "names": {
-        "english": "Dark Call III"
+        "english": "Seance III"
       },
       "descriptions": {
         "english": "[raise] [effect0.power] random units and apply [rage] [effect0.upgrade.status1.power]."
